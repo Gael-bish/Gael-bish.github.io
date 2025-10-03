@@ -1,0 +1,180 @@
+<DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+  <title></title>
+  </head>
+  <body >
+    <link rel="stylesheet" href="estilos.css">
+    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+    <input type="checkbox" id="toggle">
+    <div class="contenedor">
+  </div>
+
+    <div class="container">
+<div class="logo">
+<h1> Mi Blog Culinario</h1>
+<p>Recetas caseras con amor</p>
+</div>
+<nav class="nav-menu">
+<ul class="menu-list">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#recetas">Recetas</a></li>
+<li><a href="#categorias">Categorías</a></li>
+<li><a href="#sobre-mi">Sobre Mí</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+</div>
+<section class="hero" id="inicio">
+<div class="hero-content">
+<h1>Descubre el Arte de la Cocina</h1>
+<p>Recetas tradicionales, técnicas modernas y sabores inolvidables</p>
+<a <button class="cta-button" href="#recetas">Explorar Recetas</button></a>
+</div>
+</section>
+
+<section class="featured-recipes" id="recetas">
+<h2> Recetas Destacadas</h2>
+<div class="recipes-grid">
+<article class="recipe-card">
+<div class="recipe-image">
+<img src="tacoos.jpeg" width="500px" height="450px">
+<span class="recipe-badge">* Popular</span>
+</div>
+<div class="recipe-content">
+<h3>Tocos dorados</h3>
+<p>Unos tacos que son consumidos en Guatemala </p>
+<div class="recipe-meta">
+<span>20 min</span>
+<span>Media</span>
+<span>personas</span>
+</div>
+<a href="tacos.html" class="recipe-button">Ver Receta</a>
+</div>
+
+</article>
+
+<article class="recipe-card">
+<div class="recipe-image">
+<img src="shuco.jpg" alt="Shuco Guatemalteco">
+<span class="recipe-badge"> • Picante</span>
+</div>
+<div class="recipe-content">
+<h3>Shuco Guatemalteco</h3>
+<p>Un platillo muy consumido pan con salchica, capsup, varios tipos de adereso con repollo.</p>
+<div class="recipe-meta">
+<span> 15 min</span>
+<span> * Fácil</span>
+<span> 4 personas</span>
+</div>
+<a href="shuco.html" class="recipe-button">Ver Receta</a>
+</div>
+</article>
+
+<article class="recipe-card">
+<div class="recipe-image">
+<img src="enchilada.jpeg" alt="Enchiladas">
+<span class="recipe-badge"> Saludable</span>
+</div>
+<div class="recipe-content">
+<h3>Enchilada</h3>
+<p>Aprende a como hacer unas enchiladas saludables</p>
+<div class="recipe-meta">
+<span>  60 min</span>
+<span>  Facil</span>
+<span> 1 personas</span>
+</div>
+<a href="enchiladas.html" class="recipe-button">Ver Receta</a>
+</div>
+</article>
+</div>
+</section>
+<section class="categories" id="categorias">
+  <center>
+<h2> Categorías</h2>
+<div class="categories-grid">
+<div class="category-card">
+<div class="category-icon">  </div>
+<h3>Comida Corrida</h3>
+<p>3 recetas</p>
+</div>
+</center>
+</section>
+<section class="about" id="sobre-mi">
+<div class="about-content">
+<div class="about-text">
+<h2> es Sobre Mi</h2>
+<p>¡Hola! Soy Gael , un apasionado de la cocina desde que tengo memoria. Crecí viendo a mi abuela preparar platillos increibles y ahora quiero compartir ese conocimiento
+contigo.</p>
+<p>Mi misión es demostrar que cocinar puede ser divertido, creativo y accesible pa
+ra todos. </p>
+<div class="social-links">
+<a href="https://www.instagram.com/gael_cc.__?igsh=Z2FibTF1NG1lcDRp&utm_source=qr">« Instagram</a>
+<a href="https://www.facebook.com/share/14KpBU8cW2i/?mibextid=wwXIfr">…
+Facebook</a>
+</div>
+</div>
+<div class="about-image">
+<img src="cheff.png" alt="Gael en la cocina">
+</div>
+</div>
+</section>
+<section class="newsletter">
+<div class="newsletter-content">
+<h2> Suscribete al Newsletter</h2>
+<p>Recibe nuevas recetas cada semana</p>
+<form class="newsletter-form">
+<input type="email" placeholder="Tu email aquí..." required>
+<button type="submit">Suscribirme</button>
+</form>
+</div>
+</section>
+
+<footer class="footer" id="contacto">
+<div class="footer-content">
+<div class="footer-section">
+<h3> Mi Blog Culinario</h3>
+<p>Compartiendo recetas desde 2024</p>
+</div>
+<div class="footer-section">
+<h4>Enlaces Rápidos</h4>
+<ul>
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#recetas">Recetas</a></li>
+<li><a href="#categorias">Categorías</a></li>
+<li><a href="#sobre-mi">Sobre Mi</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contacto</h4>
+<p>@ hola@miblog.com</p>
+<p> +34 123 456 789</p>
+<p> Guatemala</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&coy; 2024 Mi Blog Culinario. Creado por Gael .</p>
+</div>
+</footer>
+<script>
+        let toggle = document.getElementById('toggle');
+        let label_toggle = document.getElementById('label_toggle');
+
+        toggle.addEventListener('change', (event) => {
+            let checked = event.target.checked;
+            document.body.classList.toggle('dark');
+         document.footer.classList.toggle('dark');
+            if (checked == true) {
+                label_toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+        });
+    </script>
+  </body>
+</html>

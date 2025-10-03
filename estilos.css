@@ -1,0 +1,457 @@
+/* Paleta de colores de Guatemala */
+:root {
+    --azul-bandera: #12A9DC; /* Azul cielo de la bandera */
+    --blanco-bandera: #FFFFFF; /* Blanco */
+    --gris-claro: #f0f0f0; /* Un gris claro para fondos sutiles */
+    --gris-medio: #777; /* Un gris medio para textos secundarios */
+    --negro-textos: #333; /* Negro para textos principales */
+
+    --bg-color: #fff; /* Fondo claro */
+    --text-color: #000; /* Texto oscuro */
+    --link-color: blue;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #12A9DC, #FFFFFF, #12A9DC); /* Azul, Blanco, Azul */
+  transition: all 1.5s ease;
+
+}
+
+/* Estilos del Header */
+header {
+    background-color: var(--blanco-bandera);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    color: var(--azul-bandera);
+    margin: 0;
+}
+
+.logo p {
+    color: var(--gris-medio);
+    margin: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--negro-textos);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--azul-bandera);
+}
+
+/* Estilos de la Sección Hero */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Guate.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco-bandera);
+
+}
+
+.hero-content {
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: var(--azul-bandera);
+    color: var(--blanco-bandera);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0E84B0; /* Un tono más oscuro del azul */
+}
+
+/* Estilos de las Recetas Destacadas */
+.featured-recipes {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.featured-recipes h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--azul-bandera);
+}
+
+.recipes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.recipe-card {
+    background: var(--blanco-bandera);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    color: black;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-image {
+    position: relative;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+
+.recipe-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--azul-bandera);
+    color: var(--blanco-bandera);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+}
+
+.recipe-content {
+    padding: 20px;
+    text-align: left;
+    color: black;
+
+}
+
+.recipe-content h3 {
+    margin-top: 0;
+    color: var(--negro-textos);
+}
+
+.recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--gris-medio);
+    font-size: 0.9em;
+}
+
+.recipe-button {
+    display: inline-block;
+    background-color: var(--azul-bandera);
+    color: var(--blanco-bandera);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-button:hover {
+    background-color: #0E84B0; /* Un tono más oscuro del azul */
+}
+
+/* Estilos de las Categorías */
+.categories {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--gris-claro);
+}
+
+.categories h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--azul-bandera);
+}
+
+.categories-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background: var(--blanco-bandera);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+.category-icon {
+    /* Aquí puedes agregar iconos */
+    margin-bottom: 10px;
+}
+
+.category-card h3 {
+    margin-top: 0;
+    color: var(--negro-textos);
+}
+
+.category-card p {
+    color: var(--gris-medio);
+}
+
+/* Estilos de la Sección "Sobre Mí" */
+.about {
+    padding: 50px 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--azul-bandera);
+}
+
+.about-text p {
+    line-height: 1.6;
+    color: var(--gris-medio);
+}
+
+.social-links a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: var(--azul-bandera);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0E84B0; /* Un tono más oscuro del azul */
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Estilos del Newsletter */
+.newsletter {
+    background-color: var(--gris-claro);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: var(--azul-bandera);
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-form input {
+    padding: 15px;
+    border: 1px solid var(--gris-medio);
+    border-radius: 5px;
+    width: 300px;
+    font-size: 1em;
+    color: var(--negro-textos);
+}
+
+.newsletter-form button {
+    background-color: var(--azul-bandera);
+    color: var(--blanco-bandera);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #0E84B0; /* Un tono más oscuro del azul */
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: var(--negro-textos);
+    color: var(--blanco-bandera);
+    padding: 50px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    color: var(--blanco-bandera);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--gris-claro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--blanco-bandera);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+/* Diseño Responsive (Mobile First) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .featured-recipes .recipes-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .categories-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .category-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        order: -1;
+    }
+}
+
+/* Media Queries para Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .recipe-card {
+        width: calc(50% - 20px);
+    }
+}
+
+
+body.dark-mode {
+  background-color: #333; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+}
+#toggle{
+  display: none;
+}
+#label_toggle{
+
+  font-size: 5em;
+  cursor: pointer;
+}
+.dark{
+  background: black;
+  color: white;
+  transition: all 1.5 ease;
+}

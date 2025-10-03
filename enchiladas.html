@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="utf-8">
+
+
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css>
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="estilos.css">
+    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+    <input type="checkbox" id="toggle">
+    <div class="container">
+<div class="logo">
+<h1> Mi Blog Culinario</h1>
+<p>Recetas caseras con amor</p>
+</div>
+<nav class="nav-menu">
+<ul class="menu-list">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="index.html">Recetas</a></li>
+<li><a href="index.html">Categorías</a></li>
+<li><a href="index.html">Sobre Mí</a></li>
+<li><a href="index.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+    <section class="featured-recipes">
+      <div class="recipes-grid">
+      <article class="recipe-card">
+      <div class="recipe-image">
+    <center>🌮 Enchilada Guatemalteca
+Ingredientes básicos:blockquote <br>
+Tostada de maíz frita <br>
+Carne molida guisada (con tomate, cebolla, especias) <br>
+Escabeche de remolacha (remolacha rallada con vinagre, zanahoria y repollo) <br>
+Huevo duro en rodajas <br>
+Perejil o queso duro rallado <br>
+Salsa de tomate al gusto <br>
+Preparación rápida: <br>
+Fríe las tortillas hasta que queden tostadas. <br>
+Prepara la carne molida guisada. <br>
+Haz el escabeche con remolacha, zanahoria y repollo. <br>
+Arma la enchilada: sobre la tostada pon carne, luego escabeche, una rodaja de huevo, salsa y adorna con perejil o queso. <br>
+👉 ¡Y listo! Una enchilada chapina colorida, crujiente y deliciosa. <br>
+¿Quieres que te haga una versión paso a paso con cantidades exactas para que la prepares en casa? <br>
+     <img class="ima" src="enchilada.jpeg" width="300px" height="300px"><br>
+     <a href="index.html"> <button type="button" name="button" class="cta-button"> volver al inicio</button></a>
+</center
+</div>
+</div>
+
+</section>
+<section class="newsletter">
+<div class="newsletter-content">
+<h2> Suscribete al Newsletter</h2>
+<p>Recibe nuevas recetas cada semana</p>
+<form class="newsletter-form">
+<input type="email" placeholder="Tu email aquí..." required>
+<button type="submit">Suscribirme</button>
+</form>
+</div>
+</section>
+
+<footer class="footer" id="contacto">
+<div class="footer-content">
+<div class="footer-section">
+<h3> Mi Blog Culinario</h3>
+<p>Compartiendo recetas desde 2024</p>
+</div>
+<div class="footer-section">
+<h4>Enlaces Rápidos</h4>
+<ul>
+<li><a href="#inicio">Inicio</a>/li>
+<li><a href="#recetas">Recetas</a></li>
+<li><a href="#categorias">Categorías</a></li>
+<li><a href="#sobre-mi">Sobre Mi</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Contacto</h4>
+<p>@ hola@miblog.com</p>
+<p> +34 123 456 789</p>
+<p> Guatemala</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&coy; 2024 Mi Blog Culinario. Creado por Gael .</p>
+</div>
+</footer>
+<script>
+        let toggle = document.getElementById('toggle');
+        let label_toggle = document.getElementById('label_toggle');
+
+        toggle.addEventListener('change', (event) => {
+            let checked = event.target.checked;
+            document.body.classList.toggle('dark');
+         document.footer.classList.toggle('dark');
+            if (checked == true) {
+                label_toggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            } else {
+                label_toggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            }
+        });
+    </script>
+  </body>
+</html>
